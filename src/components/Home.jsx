@@ -3,8 +3,8 @@ import { Link } from "react-scroll";
 
 function Home() {
   return (
-    <section className="bg-gray-100 h-screen flex flex-col items-center p-8">
-      <div className="w-full flex justify-center mb-8">
+    <section className="bg-[#F9F6EF] h-screen flex flex-col items-center p-8">
+      <div className="w-full flex justify-center mb-8 text-xl">
         <Link
           to="home"
           smooth={true}
@@ -38,21 +38,21 @@ function Home() {
           Dining Hours
         </Link>
       </div>
-      <div className="flex justify-center items-center w-full">
-        <div className="flex flex-col items-center flex-grow">
+      <div className="flex justify-center items-center w-full ml-40 mt-20">
+        <div className="flex flex-col items-start flex-grow">
           <Link to="home" name="home">
             <img
               src="https://popthaiorlando.com/wp-content/uploads/2024/01/pop-thai-transparent-300x140-1.png"
               alt="Logo"
-              className="h-64 w-64"
+              className="h-auto w-80 mb-2"
             />
           </Link>
-          <p className="mt-2 text-center">
+          <p className=" text-4xl mt-2 mb-2 text-left">
             ORLANDO'S AUTHENTIC
             <br />
             THAI FOOD EXPERIENCE
           </p>
-          <button className="mt-2 p-2 bg-green-500 text-white rounded-full">
+          <button className="mt-2 px-8 py-4 bg-[#1FA405] text-[#F9F6EF] text-xl rounded-full transition-colors duration-300 hover:bg-[#178204] hover:text-white">
             Order Now
           </button>
         </div>
@@ -60,7 +60,7 @@ function Home() {
           <img
             src="https://media.timeout.com/images/102431833/750/422/image.webp"
             alt="Right"
-            className="h-64 w-64"
+            className="h-auto max-w-xl rounded-[24px] mr-10"
           />
         </div>
       </div>

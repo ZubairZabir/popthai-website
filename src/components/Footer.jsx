@@ -9,9 +9,13 @@ function Footer() {
           alt="PopThai Logo"
           className="h-12 mb-2 mx-auto"
         />
-        <p>PopThai - Experience the taste of Thailand</p>
+        <p className=" text-4xl mt-2 mb-2 text-left">
+            ORLANDO'S AUTHENTIC
+            <br />
+            THAI FOOD EXPERIENCE
+          </p>
         <button
-          className="mt-2 p-2 bg-green-500 rounded-full"
+          className="mt-2 px-8 py-4 bg-[#1FA405] text-[#F9F6EF] text-xl rounded-full transition-colors duration-300 hover:bg-[#178204] hover:text-white"
           onClick={() => (window.location.href = "#home")}
         >
           Order Now
