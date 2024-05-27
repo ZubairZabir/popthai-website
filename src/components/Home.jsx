@@ -9,7 +9,7 @@ function Home() {
           to="home"
           smooth={true}
           duration={500}
-          className="m-2 p-2 text-black cursor-pointer"
+          className="m-2 p-2 text-black cursor-pointer link-hover"
         >
           Home
         </Link>
@@ -17,7 +17,7 @@ function Home() {
           to="menu"
           smooth={true}
           duration={500}
-          className="m-2 p-2 text-black cursor-pointer"
+          className="m-2 p-2 text-black cursor-pointer link-hover"
         >
           Menu
         </Link>
@@ -25,7 +25,7 @@ function Home() {
           to="our-story"
           smooth={true}
           duration={500}
-          className="m-2 p-2 text-black cursor-pointer"
+          className="m-2 p-2 text-black cursor-pointer link-hover"
         >
           Our Story
         </Link>
@@ -33,7 +33,7 @@ function Home() {
           to="dining-hours"
           smooth={true}
           duration={500}
-          className="m-2 p-2 text-black cursor-pointer"
+          className="m-2 p-2 text-black cursor-pointer link-hover"
         >
           Dining Hours
         </Link>
