@@ -80,11 +80,11 @@ function Menu() {
         <div className="relative w-full flex items-center justify-center">
           <button
             onClick={prevItem}
-            className="absolute left-2 md:left-4 top-24 p-2 py-2 md:py-4 bg-gray-200 text-gray-800 rounded-full text-lg md:text-xl transition-all duration-300 hover:bg-gray-300 hover:text-gray-900"
+            className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 p-2 py-2 md:py-4 bg-gray-200 text-gray-800 rounded-full text-lg md:text-xl transition-all duration-300 hover:bg-gray-300 hover:text-gray-900"
           >
             &larr;
           </button>
-          <div className="flex w-full justify-center space-x-2 md:space-x-4">
+          <div className="flex w-full justify-center items-center space-x-2 md:space-x-4">
             {menuItems
               .slice(
                 currentItem,
@@ -111,7 +111,7 @@ function Menu() {
           </div>
           <button
             onClick={nextItem}
-            className="absolute right-2 md:right-4 top-24 p-2 py-2 md:py-4 bg-gray-200 text-gray-800 rounded-full text-lg md:text-xl transition-all duration-300 hover:bg-gray-300 hover:text-gray-900"
+            className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 p-2 py-2 md:py-4 bg-gray-200 text-gray-800 rounded-full text-lg md:text-xl transition-all duration-300 hover:bg-gray-300 hover:text-gray-900"
           >
             &rarr;
           </button>
