@@ -44,13 +44,10 @@ const Navbar = () => {
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed inset-0 z-20 bg-neutral-900 w-full h-full p-12 flex flex-col justify-center items-center lg:hidden">
-            <button className="absolute top-4 right-4" onClick={toggleNavbar}>
-              <X />
-            </button>
-            <ul>
+          <div className="absolute top-16 left-0 z-20 bg-neutral-900 w-full p-6 flex flex-col items-center lg:hidden">
+            <ul className="space-y-4 text-white text-lg">
               {navItems.map((item, index) => (
-                <li key={index} className="py-4 text-white text-lg">
+                <li key={index}>
                   {item.isExternal ? (
                     <a href={item.href} onClick={toggleNavbar}>
                       {item.label}
