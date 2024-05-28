@@ -15,7 +15,13 @@ function Footer() {
         ORLANDO'S AUTHENTIC <br />
         THAI FOOD EXPERIENCE
       </h1>
-      <button className="mt-2 px-8 md:px-12 py-4 bg-[#1FA405] text-[#F9F6EF] text-lg md:text-xl rounded-full transition-colors duration-300 hover:bg-[#178204] hover:text-white">
+      <button
+        className="mt-2 px-8 md:px-12 py-4 bg-[#1FA405] text-[#F9F6EF] text-lg md:text-xl rounded-full transition-colors duration-300 hover:bg-[#178204] hover:text-white"
+        onClick={() =>
+          (window.location.href =
+            "https://order.toasttab.com/online/pop-thai-mills")
+        }
+      >
         Order Now
       </button>
       <div className="w-full px-4 mb-5">

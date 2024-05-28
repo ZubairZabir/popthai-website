@@ -21,7 +21,13 @@ const Home = () => {
               <br />
               THAI FOOD EXPERIENCE
             </p>
-            <button className="mt-2 px-6 py-3 md:px-8 md:py-4 bg-[#1FA405] text-[#F9F6EF] text-lg md:text-xl rounded-full transition-colors duration-300 hover:bg-[#178204] hover:text-white">
+            <button
+              className="mt-2 px-6 py-3 md:px-8 md:py-4 bg-[#1FA405] text-[#F9F6EF] text-lg md:text-xl rounded-full transition-colors duration-300 hover:bg-[#178204] hover:text-white"
+              onClick={() =>
+                (window.location.href =
+                  "https://order.toasttab.com/online/pop-thai-mills")
+              }
+            >
               Order Now
             </button>
           </div>

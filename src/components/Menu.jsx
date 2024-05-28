@@ -119,7 +119,10 @@ function Menu() {
         <div className="w-full flex justify-center">
           <button
             className="mt-6 md:mt-10 px-6 md:px-8 py-3 md:py-4 bg-[#1FA405] text-[#F9F6EF] text-lg md:text-xl rounded-full transition-colors duration-300 hover:bg-[#178204] hover:text-white"
-            onClick={() => (window.location.href = "https://example.com")}
+            onClick={() =>
+              (window.location.href =
+                "https://order.toasttab.com/online/pop-thai-mills")
+            }
           >
             See More
           </button>
