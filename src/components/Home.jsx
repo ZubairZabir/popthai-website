@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-scroll";
+import Navbar from "./Navbar";
 
-function Home() {
+const Home = () => {
   return (
     <section className="bg-[#F9F6EF] h-screen flex flex-col items-center p-4 md:p-8">
+      <Navbar />
       <div className="w-full flex flex-wrap justify-center mb-4 md:mb-8 text-sm md:text-xl">
         <Link
           to="home"
@@ -38,7 +40,7 @@ function Home() {
           Dining Hours
         </Link>
         <a
-          href="tel:+14072035088" 
+          href="tel:+14072035088"
           className="m-2 p-2 text-black cursor-pointer link-hover"
         >
           Contact Us
@@ -72,6 +74,6 @@ function Home() {
       </div>
     </section>
   );
-}
+};
 
 export default Home;
