@@ -21,7 +21,7 @@ function Footer() {
       <div className="w-full px-4 mb-5">
         <div className="flex justify-start mb-2">
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/share/fewZ5TZU9AqKhh7a/?mibextid=LQQJ4d"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -32,7 +32,7 @@ function Footer() {
             />
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/popthairestaurant?igsh=MXZ5NTB5ZWhyeWV5bA=="
             target="_blank"
             rel="noopener noreferrer"
           >
