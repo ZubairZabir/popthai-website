@@ -38,7 +38,7 @@ function Home() {
           Dining Hours
         </Link>
         <a
-          href="tel:+1234567890" // replace with the actual phone number
+          href="tel:+14072035088" 
           className="m-2 p-2 text-black cursor-pointer link-hover"
         >
           Contact Us
