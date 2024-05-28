@@ -28,9 +28,19 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <li key={index}>
                 {item.isExternal ? (
-                  <a href={item.href}>{item.label}</a>
+                  <a
+                    href={item.href}
+                    className="p-2 text-black cursor-pointer link-hover shadow-md hover:shadow-lg transition-shadow duration-300"
+                  >
+                    {item.label}
+                  </a>
                 ) : (
-                  <Link to={item.href} smooth={true} duration={500}>
+                  <Link
+                    to={item.href}
+                    smooth={true}
+                    duration={500}
+                    className="p-2 text-black cursor-pointer link-hover shadow-md hover:shadow-lg transition-shadow duration-300"
+                  >
                     {item.label}
                   </Link>
                 )}
