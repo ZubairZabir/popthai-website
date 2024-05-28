@@ -74,11 +74,11 @@ function Menu() {
   return (
     <section className="bg-white h-screen flex flex-col items-center justify-center p-8">
       <Element name="menu">
-        <h2 className="text-6xl mb-4">MENU</h2>
+        <h2 className="text-6xl font-medium mb-10 text-center">MENU</h2>
         <div className="relative w-full flex items-center justify-center">
           <button
             onClick={prevItem}
-            className="absolute left-0 p-2 bg-gray-200 rounded-full text-xl"
+            className="absolute left-0 top-24 p-2 py-4 bg-gray-200 text-gray-800 rounded-full text-xl transition-all duration-300 hover:bg-gray-300 hover:text-gray-900"
             style={{ marginLeft: "10px" }}
           >
             &larr;
@@ -91,27 +91,30 @@ function Menu() {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-64 h-64 object-cover"
+                    className="w-64 h-64 object-cover rounded-[24px]"
                   />
-                  <h3 className="text-xl mt-2">{item.name}</h3>
-                  <p>{item.description}</p>
+                  <h3 className="text-xl mt-4">{item.name}</h3>
+                  <p className="text-gray-400">{item.description}</p>
                 </div>
               ))}
           </div>
           <button
             onClick={nextItem}
-            className="absolute right-0 p-2 bg-gray-200 rounded-full text-xl"
-            style={{ marginRight: "10px" }}
+            className="absolute right-0 top-24 p-2 py-4 bg-gray-200 text-gray-800 rounded-full text-xl transition-all duration-300 hover:bg-gray-300 hover:text-gray-900"
+            style={{ marginRight: "10px"}}
           >
             &rarr;
           </button>
         </div>
-        <button
-          className="mt-4 px-8 py-4 bg-green-500 text-white rounded-full"
-          onClick={() => (window.location.href = "https://example.com")}
-        >
-          See More
-        </button>
+        <div className="w-full flex justify-center">
+          <button
+            className="mt-10 px-8 py-4 bg-[#1FA405] text-[#F9F6EF] text-xl rounded-full transition-colors duration-300 hover:bg-[#178204] hover:text-white"
+            onClick={() => (window.location.href = "https://example.com")}
+          >
+            See More
+          </button>
+        </div>
+        
       </Element>
     </section>
   );
