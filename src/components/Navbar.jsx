@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/popthai-logo.jpeg";
 
 const navItems = [
   { href: "home", label: "Home" },
@@ -23,7 +22,6 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
             <span className="text-xl tracking-tight">PopThai</span>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
@@ -39,19 +37,24 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className="lg:hidden md:flex flex-col justify-end">
+          <div className="lg:hidden flex justify-end">
             <button onClick={toggleNavbar}>
               {mobileDrawerOpen ? <X /> : <Menu />}
             </button>
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="fixed inset-0 z-20 bg-neutral-900 w-full h-full p-12 flex flex-col justify-center items-center lg:hidden">
+            <button className="absolute top-4 right-4" onClick={toggleNavbar}>
+              <X />
+            </button>
             <ul>
               {navItems.map((item, index) => (
-                <li key={index} className="py-4">
+                <li key={index} className="py-4 text-white text-lg">
                   {item.isExternal ? (
-                    <a href={item.href}>{item.label}</a>
+                    <a href={item.href} onClick={toggleNavbar}>
+                      {item.label}
+                    </a>
                   ) : (
                     <Link
                       to={item.href}
