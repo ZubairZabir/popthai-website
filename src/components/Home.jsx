@@ -37,6 +37,12 @@ function Home() {
         >
           Dining Hours
         </Link>
+        <a
+          href="tel:+14072035088" // replace with the actual phone number
+          className="m-2 p-2 text-black cursor-pointer link-hover"
+        >
+          Contact Us
+        </a>
       </div>
       <div className="flex justify-center items-center w-full ml-40 mt-20">
         <div className="flex flex-col items-start flex-grow">
@@ -47,7 +53,7 @@ function Home() {
               className="h-auto w-80 mb-2"
             />
           </Link>
-          <p className=" text-4xl mt-2 mb-2 text-left">
+          <p className="text-4xl mt-2 mb-2 text-left">
             ORLANDO'S AUTHENTIC
             <br />
             THAI FOOD EXPERIENCE
