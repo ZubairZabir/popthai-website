@@ -72,49 +72,58 @@ function Menu() {
   };
 
   return (
-    <section className="bg-white h-screen flex flex-col items-center justify-center p-8">
+    <section className="bg-white h-screen flex flex-col items-center justify-center p-4 md:p-8">
       <Element name="menu">
-        <h2 className="text-6xl font-medium mb-10 text-center">MENU</h2>
+        <h2 className="text-4xl md:text-6xl font-medium mb-6 md:mb-10 text-center">
+          MENU
+        </h2>
         <div className="relative w-full flex items-center justify-center">
           <button
             onClick={prevItem}
-            className="absolute left-0 top-24 p-2 py-4 bg-gray-200 text-gray-800 rounded-full text-xl transition-all duration-300 hover:bg-gray-300 hover:text-gray-900"
-            style={{ marginLeft: "10px" }}
+            className="absolute left-2 md:left-4 top-24 p-2 py-2 md:py-4 bg-gray-200 text-gray-800 rounded-full text-lg md:text-xl transition-all duration-300 hover:bg-gray-300 hover:text-gray-900"
           >
             &larr;
           </button>
-          <div className="flex w-full justify-center space-x-4">
+          <div className="flex w-full justify-center space-x-2 md:space-x-4">
             {menuItems
-              .slice(currentItem, currentItem + 4)
+              .slice(
+                currentItem,
+                currentItem + (window.innerWidth < 768 ? 1 : 4)
+              )
               .map((item, index) => (
-                <div key={index} className="flex flex-col items-center">
+                <div
+                  key={index}
+                  className="flex flex-col items-center w-full md:w-auto"
+                >
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-64 h-64 object-cover rounded-[24px]"
+                    className="w-40 h-40 md:w-64 md:h-64 object-cover rounded-[24px]"
                   />
-                  <h3 className="text-xl mt-4">{item.name}</h3>
-                  <p className="text-gray-400">{item.description}</p>
+                  <h3 className="text-lg md:text-xl mt-2 md:mt-4">
+                    {item.name}
+                  </h3>
+                  <p className="text-gray-400 text-sm md:text-base">
+                    {item.description}
+                  </p>
                 </div>
               ))}
           </div>
           <button
             onClick={nextItem}
-            className="absolute right-0 top-24 p-2 py-4 bg-gray-200 text-gray-800 rounded-full text-xl transition-all duration-300 hover:bg-gray-300 hover:text-gray-900"
-            style={{ marginRight: "10px"}}
+            className="absolute right-2 md:right-4 top-24 p-2 py-2 md:py-4 bg-gray-200 text-gray-800 rounded-full text-lg md:text-xl transition-all duration-300 hover:bg-gray-300 hover:text-gray-900"
           >
             &rarr;
           </button>
         </div>
         <div className="w-full flex justify-center">
           <button
-            className="mt-10 px-8 py-4 bg-[#1FA405] text-[#F9F6EF] text-xl rounded-full transition-colors duration-300 hover:bg-[#178204] hover:text-white"
+            className="mt-6 md:mt-10 px-6 md:px-8 py-3 md:py-4 bg-[#1FA405] text-[#F9F6EF] text-lg md:text-xl rounded-full transition-colors duration-300 hover:bg-[#178204] hover:text-white"
             onClick={() => (window.location.href = "https://example.com")}
           >
             See More
           </button>
         </div>
-        
       </Element>
     </section>
   );
