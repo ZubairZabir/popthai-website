@@ -5,7 +5,7 @@ import instagramIcon from "../assets/instagram-icon.png";
 
 function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-center h-screen bg-gray-100 text-center p-4">
+    <footer className="flex flex-col items-center justify-center mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0 h-screen bg-[#F9F6EF] text-center p-4">
       <img
         src="https://popthaiorlando.com/wp-content/uploads/2024/01/pop-thai-transparent-300x140-1.png"
         alt="Pop Thai Logo"
@@ -24,7 +24,7 @@ function Footer() {
       >
         Order Now
       </button>
-      <div className="w-full px-4 mb-5">
+      <div className="w-full px-4 flex flex-col items-start justify-end inset-x-0 mt-36">
         <div className="flex justify-start mb-2">
           <a
             href="https://www.facebook.com/share/fewZ5TZU9AqKhh7a/?mibextid=LQQJ4d"
