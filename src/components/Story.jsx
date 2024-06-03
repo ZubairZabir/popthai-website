@@ -7,7 +7,7 @@ function Story() {
       <section className="bg-[#F9F6EF] h-screen flex items-center justify-center p-8">
         <div className="max-w-2xl text-center">
           <h2 className="text-6xl font-medium mb-10 text-center">OUR STORY</h2>
-          <div className="bg-white p-6 rounded-[24px] shadow-mid">
+          <div className="bg-white p-6 rounded-[24px] drop-shadow">
             <p className="text-xl text-left">
               Welcome to Pop Thai, Orlando's top Thai restaurant. Our chefs
               craft authentic dishes using fresh, high-quality ingredients for

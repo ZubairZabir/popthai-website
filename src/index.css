@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .link-hover {
     text-decoration: none; /* Remove default link underline */
     padding: 10px 20px; /* Adjust padding as needed */
