@@ -22,7 +22,14 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <span className="text-xl tracking-tight">PopThai</span>
+            <span className="text-xl tracking-tight">
+              <img
+                src="https://popthaiorlando.com/wp-content/uploads/2024/01/pop-thai-transparent-300x140-1.png"
+                alt="PopThai Logo"
+                className="inline-block align-text-bottom"
+                style={{ height: "1.25rem", width: "auto" }}
+              />
+            </span>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
